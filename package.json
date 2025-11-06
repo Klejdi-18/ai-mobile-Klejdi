@@ -8,10 +8,15 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "keywords": ["car-rental", "react", "vite"],
+  "keywords": [
+    "car-rental",
+    "react",
+    "vite"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@supabase/supabase-js": "^2.80.0",
     "@vitejs/plugin-react": "^5.1.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
