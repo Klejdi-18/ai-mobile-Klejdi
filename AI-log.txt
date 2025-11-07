@@ -1,1 +1,22 @@
+=============================
+AI Interaction Log
+Project: ai-mobile-Klejdi
+Date: 07/11/2025
+=============================
+
+# Prompt 1
+User: How can I fix the “npm ERR! Missing script: start” error in my project?
+AI: The error appears because the "start" script is missing in package.json. You can use “npm run dev” instead or add "start": "vite" under the scripts section.
+
+# Prompt 2
+User: How do I open my website automatically when running the project?
+AI: Add the “--open” flag to the Vite start command: "start": "vite --open". This will automatically launch the app in your browser.
+
+# Prompt 3
+User: What does “✖ Running 'npm run build'...” mean during Codespace setup?
+AI: It’s a temporary message that appears when npm build runs before dependencies are ready. Since the container finished successfully, it’s safe to ignore unless you see red error lines.
+
+=============================
+End of Log
+=============================
 
