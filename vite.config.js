@@ -7,9 +7,5 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5000,
     allowedHosts: ['.replit.dev', '.repl.co']
-  },
-  define: {
-    'import.meta.env.VITE_SUPABASE_URL': JSON.stringify(process.env.SUPABASE_URL),
-    'import.meta.env.VITE_SUPABASE_KEY': JSON.stringify(process.env.SUPABASE_KEY)
   }
 })

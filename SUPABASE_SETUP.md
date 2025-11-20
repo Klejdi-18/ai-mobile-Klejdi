@@ -268,6 +268,20 @@ If you see "Could not find the table...", create the table in your Supabase dash
 2. Click on "Table Editor" in the sidebar
 3. Create your table with the appropriate columns
 
+### Create the `tasks` table (for the Tasks page)
+If you're seeing the error from the Tasks page ("Could not find the table 'public.tasks' in the schema cache"), you can create the table quickly by running the SQL included in this repository.
+
+Steps
+1. Open your Supabase project in the web dashboard.
+2. Open the SQL Editor (left sidebar -> SQL Editor).
+3. Copy the contents of `sql/create_tasks_table.sql` from this repository and paste it into the SQL editor, or upload/run that file.
+4. Execute the query. You should see a success message and the new table under the Table Editor.
+
+Notes
+- The SQL in `sql/create_tasks_table.sql` creates a `public.tasks` table and (for development only) enables simple RLS policies that allow the anon role to SELECT/INSERT/UPDATE. Remove or harden these policies for production.
+- Make sure your app's `VITE_SUPABASE_URL` and `VITE_SUPABASE_KEY` point to the same Supabase project where you ran the SQL.
+- After running the SQL, restart your dev server and refresh the app. Adding tasks from the UI should now persist and show up in the list.
+
 ### Connection Issues
 If you're having connection issues:
 1. Verify your `SUPABASE_URL` and `SUPABASE_KEY` in Replit Secrets
