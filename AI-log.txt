@@ -20,3 +20,25 @@ AI: It’s a temporary message that appears when npm build runs before dependenc
 End of Log
 =============================
 
+=============================
+AI Interaction Log
+Project: Expo-ReactNative-Tasks
+Date: 20/11/2025
+Prompt 1
+
+User: How can I display all tasks and mark them as done or undone?
+AI: Fetch all tasks from the tasks table in Supabase. Display them in a list and allow clicking each task to toggle its “done” or “undone” status.
+
+Prompt 2
+
+User: How can I add a new task?
+AI: Provide an input field to add a new task to Supabase. Automatically refresh the task list after adding.
+
+Prompt 3
+
+User: How can I delete a task?
+AI: Add a button for each task to delete it from the tasks table. Refresh the task list after deletion.
+
+=============================
+End of Log
+
